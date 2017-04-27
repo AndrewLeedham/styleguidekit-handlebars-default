@@ -1,0 +1,15 @@
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  
+  <!-- Patterns -->
+  <div id="sg-patterns">
+    {{#each partials}}
+      {{#each patternSectionSubtype}}
+        {{> patternSectionSubtype}}
+      {{else}}
+        {{> patternSection }}
+      {{/each}}
+    {{/each}}
+  </div> <!--end #sg-patterns-->
+
+</div><!--end .sg-main-->
